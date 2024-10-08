@@ -100,8 +100,8 @@ pip install -r requirements.txt
 - ### Analysis of Results
     Each execution generates a log file named in the format `[FILE_NAME].log`.
     For example, regular training creates a log file named `round_history.log`, 
-    while a poisoning mode training with a continuous poisoning strategy generates
-    a log file named `round_history_backdoor_continuous.log`. Use `plot.py` to extract
+    while a poisoning mode training with a `random` poisoning strategy generates
+    a log file named `round_history_backdoor_random.log`. Use `plot.py` to extract
     round-wise accuracy for clean test samples (`Test Accuracy`) and poisoned samples
     (`Backdoor Accuracy`) from the log file, and plot the results.
     The plot will be saved with the name `[FILE_NAME].png`.
@@ -109,6 +109,11 @@ pip install -r requirements.txt
     ```bash
     python plot.py --file_name [FILE_NAME].log
     ```
+
+- ### Reproducible Examples
+    Three execution logs for regular training, poison mode of training, and poison mode of training with unlearning
+    are provided in the `examples` directory. The configuration parameters used are:
+    `[NUMBER_OF_ROUNDS]`=3000, `[STRATEGY]`=random, `[START_ROUND]`=300, `[DURATION]`=100, and `[UNLEARN_DURATION]`=30.
 
 ## 📚 Cite Us
 If you find our work interesting and use it in your research, please cite our paper describing:
@@ -119,7 +124,7 @@ Manaar Alam, Hithem Lamri, and Michail Maniatakos, "_Get Rid Of Your Trail: Remo
 ```
 @article{DBLP:journals/tai/AlamKM24,
   author       = {Manaar Alam and
-                  Hithem Kamri and
+                  Hithem Lamri and
                   Michail Maniatakos},
   title        = {{Get Rid Of Your Trail: Remotely Erasing Backdoors in Federated Learning}},
   journal      = {IEEE Transactions on Artificial Intelligence, {IEEE TAI} 2024},
