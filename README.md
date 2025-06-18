@@ -122,15 +122,21 @@ Manaar Alam, Hithem Lamri, and Michail Maniatakos, "_Get Rid Of Your Trail: Remo
 
 ### BibTex Citation
 ```
-@article{DBLP:journals/tai/AlamKM24,
+@article{DBLP:journals/tai/AlamLM24,
   author       = {Manaar Alam and
                   Hithem Lamri and
                   Michail Maniatakos},
-  title        = {{Get Rid Of Your Trail: Remotely Erasing Backdoors in Federated Learning}},
-  journal      = {IEEE Transactions on Artificial Intelligence, {IEEE TAI} 2024},
+  title        = {Get Rid of Your Trail: Remotely Erasing Backdoors in Federated Learning},
+  journal      = {{IEEE} Transactions on Artificial Intelligence},
+  volume       = {5},
+  number       = {12},
+  pages        = {6683--6698},
   year         = {2024},
   url          = {https://doi.org/10.1109/TAI.2024.3465441},
   doi          = {10.1109/TAI.2024.3465441},
+  timestamp    = {Sat, 25 Jan 2025 23:34:30 +0100},
+  biburl       = {https://dblp.org/rec/journals/tai/AlamLM24.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
